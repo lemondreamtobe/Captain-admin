@@ -1,16 +1,17 @@
 <p align="center">
     <img alt="captain" src="./src/global/images/logo.png" width="240">
 </p>
-<h1 align="center">🛳 Captain 👀</h1>
+<h1 align="center">🛳 Captain-admin 🎅</h1>
 
-一个麻雀虽小，但五脏俱全的脚手架 英文名Captain 中文名“船长”
->据说业务需求能在Captain的承载下稳稳航行 （本脚手架将持续更新）
+基于脚手架[Captain](https://github.com/lemondreamtobe/Captain)打造的后台SPA管理系统
+>能承载一个后台管理系统最基础的所有业务
 
 ## 功能
 - **初次使用[parcel](https://github.com/parcel-bundler/parcel)进行集成和打包**，不再需要烦恼于各种配置 零配置文件 支持更快的热更新 和更优化的生产构建
 - **封装了数据模拟**，本地即可支持mock数据，可独立于后台开发前端需求
-- **路由按需加载**，引入react-loadable 首屏加载超快
+- **路由按需加载**，引入react-loadable 首屏加载超快（因为parcel下loadable的表现异常，暂未引入）
 - **引入了antd**, 提供ui控件支持
+- **引入了redux**, 提供数据流支撑，以模型驱动的业务与视图分离
 - **支持typeScript**, 提供类型+接口支持 开发体验更强
 - **按业务模块划分的目录结构**，开发独力功能时无需分心其它模块，做到最小耦合
 
@@ -31,6 +32,7 @@
 │   │   ├── types            # 全局通用类 接口 枚举等
 │   ├── helpers              # 重要的公共方法
 │   ├── components           # 公共组件
+│   ├── routes               # 路由相关
 │   ├── pages                # 业务按照路由进行划分
 │   │   ├── index.tsx        # 路由主文件
 │   │   ├── Demo             # 路由/的页面
@@ -57,7 +59,7 @@
 
 ``` javascript
 $ git clone https://github.com/lemondreamtobe/Captain.git
-$ cd Captain
+$ cd Captain-admin
 // 安装依赖
 $ yarn
 // 启动
@@ -69,6 +71,9 @@ $ yarn build
 ## FAQ
 > 为什么使用parcel
 ##### 零配置打包不要太爽！你看工程目录中不再存在各种webpack文件 热更新和生产构建更快 打包优化代码体积更小（ps: 以前要做到这些事情要写各种webpack配置）
+
+> 为什么不使用react-loadable
+##### 因为parcel对动态import写法有自己的打包规则，使用loadable加载页面文件在顺序不同的情况会出现部分包引入抛异常问题，等待后续修复
 
 > 为什么使用typeScript
 ##### 类型 接口声明能让idea各种语法高亮 接口定义跳转 开发十分方便 后期维护便利 前期开发更容易避免bug

@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="captain" src="./src/global/images/logo.jpg" width="240">
+    <img alt="captain" src="./src/global/images/logo.png" width="240">
 </p>
 <h1 align="center">🛳 Captain 👀</h1>
 

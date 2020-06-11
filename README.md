@@ -6,6 +6,11 @@
 基于脚手架[Captain](https://github.com/lemondreamtobe/Captain)打造的后台SPA管理系统
 >能承载一个后台管理系统最基础的所有业务
 
+## 效果预览
+<p align="center">
+    <img alt="demo" src="./src/global/images/demo.gif">
+</p>
+
 ## 功能
 - **初次使用[parcel](https://github.com/parcel-bundler/parcel)进行集成和打包**，不再需要烦恼于各种配置 零配置文件 支持更快的热更新 和更优化的生产构建
 - **封装了数据模拟**，本地即可支持mock数据，可独立于后台开发前端需求

@@ -8,7 +8,7 @@
 
 ## 效果预览
 <p align="center">
-    <img alt="demo" src="./src/global/images/demo.gif">
+    <img alt="demo" src="./src/global/images/demo.gif" width="400">
 </p>
 
 ## 功能

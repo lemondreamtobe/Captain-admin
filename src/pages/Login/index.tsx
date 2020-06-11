@@ -5,6 +5,7 @@ import {Form, Input, Button, notification} from 'antd';
 import {UserOutlined, LockOutlined} from '@ant-design/icons';
 import { loginMode } from '../../modes/index';
 import Logo from '../../components/Logo';
+import {routesUrl} from '../../routes/const';
 
 export interface LoginProps {
 
@@ -24,7 +25,7 @@ class Login extends React.Component<LoginProps & RouteComponentProps, LoginState
     const res = await loginMode.login(values);
 
     if (res.error_code === 0) {
-      this.props.history.push('/home');
+      this.props.history.push(routesUrl.DEVICE);
     } else {
       notification.error({
         message: '登录失败，请联系管理员'

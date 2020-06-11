@@ -27,7 +27,8 @@
     "react-router-dom": "4.3.1",
     "redux": "^4.0.5",
     "redux-immutable": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "src": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -47,9 +48,5 @@
     "postcss-modules": "^2.0.0",
     "prettier": "^2.0.5",
     "typescript": "^3.9.5"
-  },
-  "alias": {
-    "@/helpers/*": ["./src/helpers/*"],
-    "@/global/*": ["./src/global/*"]
   }
 }
